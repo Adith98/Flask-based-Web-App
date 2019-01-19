@@ -1,5 +1,5 @@
 from flask import Flask,render_template
-from flask import request,session,redirect,json,flash
+from flask import request,session,redirect,json
 import MySQLdb,string,smtplib
 
 app = Flask(__name__)
@@ -41,7 +41,7 @@ def login():
     print(result)
     session['result']=result
     if result == None :
-         flash('There was some error')
+        return json.dumps({'html':'Something is wrong. Try to put the correct inputs'})
     else:
         return render_template("emails.html",result=result)
 
@@ -49,6 +49,9 @@ def login():
 def login_1():
     return render_template('login.html')
 
+
+    
+     
 if __name__ == '__main__':
     app.secret_key = 'some secret key'
-    app.run(debug=True)
+    app.run()
