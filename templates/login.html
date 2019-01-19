@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Up2Date</title>	
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/text.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Chicle|Lobster" rel="stylesheet">
+</head>  
+
+  <body>
+    <div id ="wrapper">
+          <ul>
+            <li1 style=float:left><a href="/">Up2Date</a></li1>
+            <li><a href="/home">SIGN UP</a></li>
+            <li><a href="/home">Not A Member?</a></li>
+            
+          </ul>
+    </div>  
+<div id="banner">
+       <form action="/login" style="border:1px solid #ccc" method='post'>
+          <div class="container">
+            <h1>Login</h1>        
+            <label for="_email_"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="_email_" required>
+        
+            <label for="_psw_"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="_psw_" required>
+        
+            <div class="clearfix">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <button type="submit" class="signupbtn">Login</button>
+            </div>
+          </div>
+        </form>
+</div>  
+<div class="footer">
+    <p>Footer</p>
+  </div>
+
+      </body>
+
+</html>

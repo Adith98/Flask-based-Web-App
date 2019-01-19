@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Up2Date</title>	
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Chicle|Lobster" rel="stylesheet">
+</head>  
+
+  <body>
+      <header class="d-flex bd-highlight mb-3">
+          <div class="navbar-item mr-auto p-2 bd-highlight">
+            <a class="navbar-brand ml-3" href="/"><b>Up2Date</b></a>
+          </div>
+          <div class="nav-item p-2 mr-3 bd-highlight">
+            <a class="nav-link" href="/home1">Login</a>
+          </div>
+        </header>
+    <div class=" text-center ">
+        <h4>Sign Up</h4>
+        <h6>Please fill in this form to create an account.</h6>
+       </div>
+       <div class="dropdown-divider"></div>
+    <div class="container">
+       <form action="/signup"  method='post'>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" name="name" aria-describedby="nameHelp" placeholder="Enter name" required>
+            <small id="nameHelp" class="form-text text-muted">No spaces allowed</small>
+          </div>
+          <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="psw">Password</label>
+                <input type="password" class="form-control" name="psw" placeholder="Password" required>
+              </div>
+              <div class="form-group">
+                  <label for="psw-repeat">Password</label>
+                  <input type="password" class="form-control" name="psw-repeat" placeholder="Repeat Password" required>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                    <label class="form-check-label" for="exampleCheck1">By checking this, you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</label>
+                  </div>
+    
+        
+            <div class="clearfix">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+    </form>
+    </div>  
+<div class="footer">
+    <p>Footer</p>
+  </div>
+</body>
+
+</html>

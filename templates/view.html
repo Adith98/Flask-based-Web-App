@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Up2Date</title>	
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Chicle|Lobster" rel="stylesheet">
+  </head> 
+<body>
+  <div class="web">  
+    <div class="container"> 
+        <ul>
+          <li1 style=float:left><a href="/emails">Up2Date</a></li1>
+          <li><a href="/">About us</a></li>
+          <li><a href="http://www.shahandanchor.com/contact-us/">Contact</a></li>
+          <li><a href="/">Features</a></li>
+          <li><a href="https://calendly.com/pages/integrations">Integration</a></li>
+          <li><a href="http://www.shahandanchor.com/our-recruiters/">Partners</a></li>
+        </ul> 
+        <ul> 
+            <li><a href="/">Logout</a></li>
+            <li>{{ result1[0] }}</li>
+        </ul>
+      <div class="title">
+        <h1>Your Upcoming Schedule!!</h1>
+       </div>
+      
+    </div>
+<div class="block-3">
+<table border="1" cellpadding="5" cellspacing="5">
+    <tr>
+        <tr>
+            <th>Sr No</th>
+            <th>Type</th>
+            <th>Topic</th>
+            <th>Description</th>
+            <th>Date & Time</th>
+    </tr>
+  
+        {% for item in data %}
+        <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{item[1]}}</td>
+            <td>{{item[2]}}</td>
+            <td>{{item[3]}}</td>
+            <td>{{item[4]}}</td>
+        </tr>
+        {% endfor %}
+</table>
+</div>
+
+<div class="block-2">
+    
+          <div class="img-block1" >
+                  <h2><a href='/emails'>Go Back</a></h2>
+              
+              </div>
+              <div class="img-block1" >
+                     <h2><a href='/meeting'>Schedule a Meeting</a></h2>
+                
+                  </div>
+                  <div class="img-block1" >
+                    <h2><a href="/event">Schedule an Event</a></h2>
+                  
+                      </div>
+                      
+</div>
+<div class="footer">
+        <p>Footer</p>
+      </div>
+</body>
+</html>

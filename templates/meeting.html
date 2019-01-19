@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Up2Date</title>	
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/text.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Chicle|Lobster" rel="stylesheet">
+</head>  
+
+  <body>
+    <div id ="wrapper">
+          <ul>
+            <li1 style=float:left><a href="/emails">Up2Date</a></li1>
+            <li><a href="/home1">Log out</a></li>
+            <li>{{result1[0]}}</li>
+            
+          </ul>
+    </div>  
+<div id="banner">
+       <form action="/create" style="border:1px solid #ccc" method='post'>
+          <div class="container">
+            <h1>Schedule A Meeting</h1>
+            <p>Fill the below details to schedule a meeting</p>
+            <hr>
+            <label for="topic"><b>Topic</b></label>
+            <input float="right "type="text" placeholder="Topic" name="topic" required>
+        
+            <label for="description"><b>Description</b></label>
+            <input float="right "type="text" placeholder="Enter your meeting description" name="description" required>
+        
+            <label for="datetime"><b>Date and Time</b></label>
+            <input float="right "type="datetime-local" name="datetime" required>
+            <div class="clearfix">
+            <button type="submit" class="signupbtn">Save</button>
+            <button type="button" class="cancelbtn">Cancel</button>
+            </div>
+          </div>
+        </form>
+</div>  
+<div class="block-2">
+    
+        <div class="img-block2" >
+                <h2><a href='/emails'>Go Back</a></h2>
+            
+            </div>
+            <div class="img-block2" >
+                   <h2><a href='/view'>View your Schedule</a></h2>
+              
+                </div>
+                
+                    </div>
+                    <div class="footer">
+                            <p>Footer</p>
+                          </div>
+      </body>
+
+</html>

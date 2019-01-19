@@ -1,0 +1,180 @@
+body
+{
+  background-color:white;
+  font-family: 'Chicle', cursive;
+}
+*{
+  padding:0;
+  margin:0;
+}
+.footer {
+  position:fixed;
+  width:100%;
+  bottom: 0;
+  left:0;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+h1
+{
+ margin: 0;
+ color:rgb(193, 59, 255);
+ font-size: 2.5vw;
+ font-style:italic;
+ text-decoration: none;
+ padding:0;
+}
+#banner
+{
+  width:60%;
+  text-align:center;
+  background-color:white;
+  background-repeat:no-repeat;
+  border-radius:5px;
+  margin:50px auto auto;
+}
+#wrapper 
+{
+  background-image: url(http://www.wildtextures.com/wp-content/uploads/2012/01/wildtextures-seamless-blue-fabric-texture.jpg);
+  color:white;
+}
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  height:40px;
+  line-height: 40px;
+}
+li{
+  float:right;
+  padding: 8px 16px;
+  letter-spacing: 3px;
+}
+li a{
+  display: block;
+  color:white;
+  text-decoration: none;
+}
+
+li1 a {
+  display: block;
+  padding-left:75px;
+  letter-spacing: 3px;
+  color:rgb(255, 255, 255);
+  font-style: bold;
+  font-family: 'Lobster', cursive;
+  font-size:30px;
+  text-decoration: none; 
+}
+li a:hover {
+
+  color: black;
+}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+background-color: rgb(37, 159, 163);
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+}
+
+button:hover {
+opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+padding: 14px 20px;
+background-color: #f43685;
+}
+
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+float: left;
+width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+.cancelbtn, .signupbtn {
+width: 100%;
+}
+}
+.block-2{
+  width:1170px;
+  margin:60px auto;
+  height:380px;
+  color: white;
+}
+.img-block2{
+  float:left;
+  width:570px;
+  text-align:center;
+  margin-right:15px; 
+  padding:0;
+}
+.img-block1{
+  float:left;
+  width:375px;
+  text-align:center;
+  margin-right:15px; 
+  padding:0;
+}
+h2 a {
+  background-color: white;
+  font-family: 'Chicle', cursive;
+  letter-spacing: 3px;
+  color: black;
+  margin-top: 16px;
+  margin-bottom:16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  text-decoration: none;
+  }
+
+  h2 a:hover {
+      
+   
+      color:blue;
+  }
